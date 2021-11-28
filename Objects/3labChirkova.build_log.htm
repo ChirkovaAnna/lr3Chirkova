@@ -9,26 +9,36 @@ License Information: , Аня, ,, LIC=----
  
 Tool Versions:
 Toolchain:       MDK-Lite  Version: 5.24.1
-Toolchain Path:  C:\ARM\ARMCLANG\Bin
-C Compiler:      ArmClang.exe V6.7
-Assembler:       Armasm.exe V6.7
-Linker/Locator:  ArmLink.exe V6.7
-Library Manager: ArmAr.exe V6.7
-Hex Converter:   FromElf.exe V6.7
+Toolchain Path:  C:\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
 CPU DLL:         SARMCM3.DLL V5.24.1
 Dialog DLL:      DARMSTM.DLL V1.68.0.0
 Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
 Dialog DLL:      TCM.DLL V1.32.0.0
  
 <h2>Project:</h2>
-C:\tsum\3labChirkova\3labChirkova.uvprojx
-Project File Date:  11/10/2021
+C:\tsum\3labChirkova — копия\3labChirkova.uvprojx
+Project File Date:  11/19/2021
 
 <h2>Output:</h2>
-*** Using Compiler 'V6.7', folder: 'C:\ARM\ARMCLANG\Bin'
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\ARM\ARMCC\Bin'
 Build target 'Target 1'
+assembling startup_stm32f10x_md.s...
+compiling system_stm32f10x.c...
+compiling main.c...
+main.h(36): warning:  #1-D: last line of file ends without a newline
+  void init_gpio (void);
+main.c(110): warning:  #1-D: last line of file ends without a newline
+      }
+main.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=1332 RO-data=268 RW-data=24 ZI-data=1656  
 After Build - User command #1: C:\\ARM\ARMCC\bin\fromelf.exe --bin --output=3labChirkova.bin .\Objects\3labChirkova.axf
-".\Objects\3labChirkova.axf" - 0 Error(s), 0 Warning(s).
+".\Objects\3labChirkova.axf" - 0 Error(s), 2 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -53,13 +63,13 @@ Package Vendor: Keil
 <h2>Collection of Component Files used:</h2>
 
    * Component: Keil::Device:Startup:1.0.0
-      Include file:  RTE_Driver\Config\RTE_Device.h
-      Source file:   Device\Source\ARM\startup_stm32f10x_md.s
       Source file:   Device\Source\system_stm32f10x.c
+      Source file:   Device\Source\ARM\startup_stm32f10x_md.s
+      Include file:  RTE_Driver\Config\RTE_Device.h
       Source file:   Device\Source\ARM\STM32F1xx_OPT.s
 
    * Component: ARM::CMSIS:CORE:5.0.1
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:09
 </pre>
 </body>
 </html>

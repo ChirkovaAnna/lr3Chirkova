@@ -19,8 +19,18 @@
 #define GPIO_PIN_15                ((uint16_t)0x8000)  /* Pin 15 selected   */
 #define GPIO_PIN_All               ((uint16_t)0xFFFF)  /* All pins selected */
 
+struct tune_up {
+    uint32_t bits;   
+};
+struct lock {
+uint8_t i;
+uint8_t a;
+uint8_t pin_c;
+uint16_t count1;
+uint16_t count2;
+uint8_t x;               
+};
 /*Определение прототипов функциий*/
-void led(void);
-void time(uint16_t count);
 void init_IT_for_exemple(void);
 void init_timer(void);
+void init_gpio (void);
